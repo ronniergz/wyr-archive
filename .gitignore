@@ -1,0 +1,14 @@
+data/
+.env
+
+# ignore everything in the "wp-content" directory, except:
+# # plugins, and themes directories
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# # # ignore all plugins, and themes
+# # # unless explicitly whitelisted at the end of this file
+wp-content/plugins/*
+wp-content/themes/*
+!wp-content/themes/total
