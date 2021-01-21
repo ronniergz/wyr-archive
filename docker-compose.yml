@@ -26,7 +26,7 @@ services:
       MYSQL_ROOT_PASSWORD: "${DB_ROOT_PW}"
       UPLOAD_LIMIT: 300M
 
-    #before adding phpMyadmin, we need to map the volume of db_data and the network of wp_site
+  # run Database and phpmyadmin first, then add wordpress
 
   wordpress: # name of our wordpress container
     depends_on: # container dependencies that need to be running first
